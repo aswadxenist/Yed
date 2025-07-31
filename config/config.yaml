@@ -1,0 +1,29 @@
+application:
+  name: Yed
+  version: 1.0.0
+  description: A powerful Python application
+
+settings:
+  debug: true
+  log_level: INFO
+  max_retries: 3
+  timeout: 30
+
+database:
+  host: localhost
+  port: 5432
+  name: yed_db
+  user: yed_user
+
+api:
+  base_url: http://api.example.com
+  version: v1
+  endpoints:
+    - /users
+    - /data
+    - /status
+
+features:
+  enable_cache: true
+  enable_logging: true
+  enable_metrics: false
